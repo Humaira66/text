@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Top Web Designer in Malaysia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body >
+
+  <!--Navbar(sit on top)-->
+<div class="logo">
+ <img src="image/logoUiTM.png">
+</div>
+ 
+
+<div class="header">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="biodata.html">My Biodata</a></li>
+    <li><a href="education.html">My Education</a></li>
+    <li><a href="experience.html">My Experience</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact Me</a></li>
+
+</div>
+<body align="center"></body>
+<h1 style="text-align: center; font-family:'Lucida Sans;" direction="display-right" >Welcome to Humaira's Website
+</h1>
+
+<div>
+<div >
+  <img class="mySlides" src="image/pink pretty saying.png" >
+  <img class="mySlides" src="image/some quote.png" >
+  <img class="mySlides" src="image/download.jpeg" >
+  <img class="mySlides" src="image/neutral.png">
+
+  <button class="button black display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="button black display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+</p>
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+</header>
+</div>
+
+
+</body>
+</html>
